@@ -1,0 +1,11 @@
+SimCLR 实验总结
+========================================
+
+预训练图像数: 3000
+预训练 epoch: 150
+Batch size: 16
+Temperature: 0.5
+最终预训练 Loss: 3.3903
+Linear probe 图像数: 1000
+Linear probe epoch: 5
+最佳测试准确率: 62.28%

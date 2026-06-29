@@ -24,7 +24,7 @@
 - 实际使用 linear probe 训练图像数：1000
 - 实际使用测试图像数：10000
 - 使用设备：GPU
-- 总训练耗时：约1.2小时
+- 总训练耗时：约50min
 
 ## 4. 数据增强
 
@@ -41,7 +41,6 @@
 |   | color_strength = 0.5 |
 | RandomApply(ColorJitter) | p=0.8 |
 | RandomGrayscale | p=0.2 |
-| GaussianBlur | / |
 
 请说明为什么这些增强适合 SimCLR：
 
@@ -358,11 +357,15 @@ CIFAR-10 是一个 10 分类任务，随机猜测的准确率仅为 10%。我们
 
 ## 13. Git 提交记录
 
-- 仓库地址：
-- 总 commit 数：
+- 仓库地址：https://github.com/zhx767/Mini-SimCLR
+- 总 commit 数：6
 
 粘贴 `git log --oneline` 输出：
 
 ```text
-（在这里粘贴 git log --oneline）
+828af34 (HEAD -> main, origin/main) feat: 完成 Mini-SimCLR 完整实现（已移除数据文件）
+89eb300 chore: 将 code 文件夹加入 .gitignore
+8f6c421 chore: 添加 .gitignore
+8b3ac91 chore: 添加 .gitignore，忽略不必要的文件
+b30dfa9 feat: 完成 Mini-SimCLR 完整实现
 ```
